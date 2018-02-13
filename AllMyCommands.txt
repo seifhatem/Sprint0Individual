@@ -1,0 +1,21 @@
+git init
+git add First.txt
+git add Second.txt
+git add Third.txt
+git reset Second.txt
+git add Second.txt
+git remote add origin https://github.com/seifhatem/Sprint0Individual.git
+git commit -m "Uploading the 3 files quoted from the book"
+git push -u origin master
+git branch ReadMe
+git checkout ReadMe
+touch README.md
+vim README.md
+git add README.md
+git commit -m "Uploading README file on the ReadMe branch"
+git push -u origin ReadMe
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "Uploading the AllMyCommands File"
+git push -u origin master
